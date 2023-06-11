@@ -16,7 +16,7 @@ void readFiles(const int fileCount, const int threads, std::vector<int>& freqOut
 
     for (int i = threadID; i < fileCount; i += threads)
     {
-        std::ifstream fin("file" + std::to_string(i) + ".txt");
+        std::ifstream fin("text_files_5.2/file" + std::to_string(i) + ".txt");
         if (fin.is_open())
         {
             char symbol;
